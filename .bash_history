@@ -229,3 +229,19 @@ mv *_document.txt document_{un,deux,trois,quatre,cinq}.txt
 ls
 dfffffffffffffdfdfdfdffdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdfdd
 exit
+clear
+ls
+clear
+git -version
+git --version
+git init
+git remote add origin https://github.com/SothPichPanha/Os-system.git
+git init
+git add .
+git commit -m"os"
+git config --global user.name "SothPichPanha"
+git commit -m "os"
+git push origin main
+git push main
+git branch -M main
+git push origin main
