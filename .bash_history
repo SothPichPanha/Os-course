@@ -245,3 +245,35 @@ git push origin main
 git push main
 git branch -M main
 git push origin main
+clear
+git remote -v
+ls
+git add .
+git commit -m"os"
+git push origin main
+git branch -M "main"
+git push origin main
+git remote -v
+git remote add origin git@github.com:SothPichPanha/Os-system.git
+git remote remove origin
+git remote add origin git@github.com:SothPichPanha/Os-system.git
+clear
+ls
+git add .
+git checkout -b "main"
+git commit -m "main"
+git branch -M main
+git commit -m "main"
+git push origin main
+git remote remove origin
+git init
+git remote add origin git@github.com:SothPichPanha/Os-course.git
+git remote -v
+git commit -m "main"
+git branch -M main
+git add .
+git commit -m "main"
+git push origin main
+clear
+git remote -v
+git push origin main
