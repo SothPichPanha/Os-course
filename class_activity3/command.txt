@@ -1,0 +1,70 @@
+  560  mkdir -p class_activity3/SHM-IPC
+  561  ls
+  562  cd class_activity3/
+  563  ls
+  564  cd SHM-IPC/
+  565  nano shm-producer.c
+  566  nano shm-consumer.c
+  567  ls
+  568  rm -rf shm-consumer.c 
+  569  nano shm-producer.c
+  570  ls
+  571  nano consumer.c
+  572  gcc -o shm-producer shm-producer.c
+  573  gcc -o shm-consumer shm-consumer.c
+  574  ls
+  575  gcc -o shm-producer shm-producer.c && gcc -o shm-consumer shm-consumer.c
+  576  mv consumer.c shm-consumer.c
+  577  gcc -o shm-producer shm-producer.c && gcc -o shm-consumer shm-consumer.c
+  578  ls
+  579  touch result-shm-ipc.txt
+  580  /shm-producer
+  581  ./shm-consumer > result-shm-ipc.txt
+  582  ls
+  583  ./shm-producer
+  584  ./shm-consumer > result-shm-ipc.txt
+  585  nano shm-producer
+  586  nano shm-producer.c
+  587  nano shm-consumer.c
+  588  gcc -o shm-producer shm-producer.c && gcc -o shm-consumer shm-consumer.c
+  589  ./shm-producer
+  590  ./shm-consumer > result-shm-ipc.txt
+  591  ls
+  592  ls /dev/shm
+  593  nano shm-producer.c
+  594  nano shm-consumer.c
+  595  gcc -o shm-producer shm-producer.c -lrt
+  596  gcc -o shm-consumer shm-consumer.c -lrt
+  597  ./shm-producer
+  598  ./shm-consumer > result-shm-ipc.txt
+  599  nano result-shm-ipc.txt 
+  600  clear
+  601  cat result-shm-ipc.txt 
+  602  cd ..
+  603  mkdir -p MQ-IPC
+  604  cd MQ-IPC/
+  605  nano sender.c
+  606  nano receiver.c
+  607  nano common.h
+  608  gcc -o sender sender.c
+  609  gcc -o receiver receiver.c
+  610  touch result-mq-ipc.txt
+  611  ./sender
+  612  ./receiver
+  613  ./receiver > result-mq-ipc.txt
+  614  cat result-mq-ipc.txt 
+  615  # run receiver in background, redirect output
+  616  ./receiver > result-mq-ipc.txt &
+  617  # run sender
+  618  ./sender
+  619  ./receiver > result-mq-ipc.txt 
+  620  ls
+  621  cat result-mq-ipc.txt 
+  622  cd ..
+  623  clear
+  624  tree
+  625  ls
+  626  history
+  627  history 50
+  628  touch command.txt
+  629  history 70 > command.txt 
