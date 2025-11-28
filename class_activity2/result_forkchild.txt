@@ -1,0 +1,4 @@
+Parent process: child PID = 1484
+forkchild
+forkchild.c
+result_forkchild.txt

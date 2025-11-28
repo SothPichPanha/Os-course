@@ -1,0 +1,15 @@
+  262  mv class_Activity2 class_activity1
+  263  ls
+  264  git add class_activity1/
+  265  git commit -m "os"
+  266  git push origin main
+  267  mkdir class_activity2
+  268  cd class_activity2
+  269  nano forkchild.c
+  270  gcc -o forkchild forkchild.c
+  271  touch result_forkchild.txt
+  272  ./forkchild > result_forkchild.txt
+  273  cat result_forkchild.txt
+  274  ./forkchild
+  275  touch command_used_forkchild.txt
+  276  history | tail -n 15 > command_used_forkchild.txt
