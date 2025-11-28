@@ -1,0 +1,50 @@
+  170  git push origin main
+  171  git push main
+  172  git push origin main
+  173  git pull origin main --rebase
+  174  git push origin main
+  175  ls
+  176  git add lab4
+  177  git commit -m "os"
+  178  git push origin main --force
+  179  clear
+  180  ls
+  181  pwd
+  182  scp -r /home/sothpichpanha/lab4 gic-soth-pichpanha@192.168.23.9
+  183  scp -r /home/sothpichpanha/lab4 gic-soth-pichpanha@192.168.23.9:/home/gic-soth-pichpanha
+  184  ls
+  185  rm -r gic-soth-pichpanha@192.168.23.9/
+  186  ls
+  187  mkdir class_Activity2
+  188  cd class_Activity2/
+  189  touch printsyscall_linux.c
+  190  nano printsyscall_linux.c 
+  191  gcc printsyscall_linux.c -o printlinux
+  192  ./printlinux
+  193  gcc --version
+  194  sudo apt install gcc
+  195  gcc --version
+  196  gcc printsyscall_linux.c -o printlinux
+  197  ./printlinux
+  198  touch copyfilesyscall.c
+  199  nano copyfilesyscall.c 
+  200  gcc copyfilesyscall.c -o copyfile
+  201  ./copyfile
+  202  ls
+  203  gcc copyfilesyscall.c -o copyfile
+  204  ./copyfile
+  205  touch  result.txt
+  206  ./copyfile
+  207  cat copyresult.txt
+  208  ls
+  209  ./copyfile
+  210  gcc copyfilesyscall.c -o copyfile
+  211  ls
+  212  cat copyresult.txt
+  213  cat result.txt 
+  214  echo "Hello syscall file copy!" > result.txt
+  215  ./copyfile
+  216  cat copyresult.txt
+  217  history | tail -n 50 > /home/sothpichpanha/class_activity1/syscall_commands_history.txt
+  218  pwd
+  219  history | tail -n 50 > /home/sothpichpanha/class_Activity2/syscall_commands_history.txt
